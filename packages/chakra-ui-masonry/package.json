@@ -1,0 +1,55 @@
+{
+  "name": "@isBatak/chakra-ui-masonry",
+  "version": "1.0.0",
+  "description": "A custom Chakra UI component that lays out contents of varying dimensions as blocks of the same width and different height with configurable gaps.",
+  "keywords": [
+    "react",
+    "chakra-ui",
+    "component",
+    "masonry",
+    "typography"
+  ],
+  "author": "Ivica Baitnić <ivicabatinic123@gmail.com>",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --config tsup.config.ts",
+    "dev": "tsup src/index.ts --config tsup.config.ts --watch",
+    "lint": "TIMING=1 eslint src/**/*.ts* --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isBatak/chakra-ui-masonry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isBatak/chakra-ui-masonry/issues"
+  },
+  "homepage": "https://github.com/isBatak/chakra-ui-masonry#readme",
+  "peerDependencies": {
+    "@chakra-ui/react": ">=1.8.6",
+    "@chakra-ui/system": ">=1.11.2",
+    "react": ">=17.0.2"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "latest",
+    "@chakra-ui/system": "latest",
+    "@changesets/changelog-github": "^0.4.3",
+    "@changesets/cli": "^2.21.1",
+    "@types/react": "latest",
+    "eslint-config-prettier": "^8.5.0",
+    "react": "latest",
+    "ts-node": "^10.7.0",
+    "tsup": "^6.1.2",
+    "typescript": "^4.6.2"
+  }
+}
